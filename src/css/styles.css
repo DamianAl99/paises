@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Commissioner', sans-serif;;
+    color: white;
+    background: rgb(4, 6, 29);
+}
+header{
+    width: 100%;
+    height: auto;
+    background: redd;
+    display: grid;
+    grid-template-rows: 50px 50px;
+    grid-gap: 1px;
+    padding-top: 10px;
+    position: relative;
+}
+header .buscador{
+    width: 90%;
+    margin-left: 5%;
+    height: 50px;
+    background: greenn;
+}
+header .buscador input{
+    width: 75%;
+    margin: auto;
+    height: 40px;
+    border-radius: 2px;
+    border: none;
+}
+header .buscador button{
+    border: none;
+    border-radius: 2px;
+    background: rgb(255, 102, 0);
+    color: white;
+    width: 20%;
+    max-width: 100px;
+    min-width: 60px;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header .continentes{
+    width: 100%;
+}
+header .continentes #cont{
+    width: 90%;
+    margin-left: 5%;
+    border: none;
+    border-radius: 2px;
+    height: 40px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    border-radius: 2px;
+    width: 90%;
+    margin: 10px auto;
+}
+.main .content-paises{
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    color: white;
+}
+.main .content-paises .paises{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.main .content-paises .paises img{
+    width: 100%;
+    height: 100%;
+}
+.main .content-paises .info-paises{
+    width: 90%;
+    margin: auto;
+}
+
+
+.btnVolver{
+    position: relative;
+}
+#volver{
+    border: none;
+    border-radius: 2px;
+    background: rgb(255, 102, 0);
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    margin-left: 20px;
+}
+.mainDetalle{
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.mainDetalle .content-paises{
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    height: auto;
+}
+.mainDetalle .content-paises .paises{
+    width: 100%;
+    max-width: 650px;
+    height: 300px;
+    max-height: 450px;
+    overflow: hidden;
+    margin: auto;
+}
+.mainDetalle .content-paises .paises img{
+    width: 100%;
+    height: 100%;
+}
+.mainDetalle .content-paises .info-paises{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 550px) {
+    header{
+        width: 100%;
+        height: auto;
+        max-height: 50px;
+        background: redd;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header .buscador{
+        width: 350px;
+        height: 50px;
+        margin-left: 20px;
+        display: inline-block;
+        background: greenn;
+    }
+    header .continentes{
+        width: 100%;
+    }
+    header .continentes #cont{
+        width: 90%;
+        float: right;
+        margin-right: 20px;
+        border: none;
+        border-radius: 2px;
+        height: 40px;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-radius: 2px;
+    }
+}
+
+
